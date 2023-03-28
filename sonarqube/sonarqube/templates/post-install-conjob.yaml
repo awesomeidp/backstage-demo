@@ -26,7 +26,7 @@ spec:
                 if oc get secret sonarqube-credentials -n {{ .Release.Namespace }} ; then
                     echo "sonarqube-credentials is already created exiting..."
                 else
-                  num_tokens=$(curl -s -u admin:admin1 -X GET -H "Content-Type: application/json" https://sonarqube-sonarqube.apps.control-cluster-raffa.demo.red-chesterfield.com/api/user_tokens/search | jq '.userTokens[] | select(.name=="backstage") | length')
+                  num_tokens=$(curl -s -u admin:admin1 -X GET -H "Content-Type: application/json" https://sonarqube-sonarqube.apps.cluster-vqg9l.vqg9l.sandbox1900.opentlc.com/api/user_tokens/search | jq '.userTokens[] | select(.name=="backstage") | length')
                   if [ -z "$num_tokens" ]; then
                     echo "sonarqube-credentials doesn't exist"
                     echo "creating token..."

@@ -46,7 +46,7 @@ For the future we plan to add monitoring to the runtime experience.
 
 ### Repository preparation
 
-Fork the following repo `https://github.com/raffaelespazzoli/backstage-demo` to your organization.
+Fork the following repo `https://github.com/awesomeidp/backstage-demo` to your organization.
 Then execute the following commands
 
 ```shell
@@ -57,51 +57,51 @@ export base_domain=$(oc get dns cluster -o jsonpath='{.spec.baseDomain}')
 ```shell
 git clone git@github.com:${github_organization}/backstage-demo.git
 cd backstage-demo
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/raffaelespazzoli/${github_organization}/g" {} +
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/raf-backstage-demo/${github_organization}/g" {} +
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/control-cluster-raffa.demo.red-chesterfield.com/${base_domain}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/awesomeidp/${github_organization}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/awesomeidp/${github_organization}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/cluster-vqg9l.vqg9l.sandbox1900.opentlc.com/${base_domain}/g" {} +
 git add -A
 git commit -m "initial customization"
 git push
 cd ..
 ```
 
-Fork the following repo `https://github.com/raf-backstage-demo/shared-workflows` to your organization.
+Fork the following repo `https://github.com/awesomeidp/shared-workflows` to your organization.
 Then execute the following commands
 
 ```shell
 git clone git@github.com:${github_organization}/shared-workflows.git
 cd shared-workflows
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/raf-backstage-demo/${github_organization}/g" {} +
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/control-cluster-raffa.demo.red-chesterfield.com/${base_domain}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/awesomeidp/${github_organization}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/cluster-vqg9l.vqg9l.sandbox1900.opentlc.com/${base_domain}/g" {} +
 git add -A
 git commit -m "initial customization"
 git push
 cd ..
 ```
 
-Fork the following repo `https://github.com/raf-backstage-demo/software-templates` to your organization.
+Fork the following repo `https://github.com/awesomeidp/software-templates` to your organization.
 Then execute the following commands
 
 ```shell
 git clone git@github.com:${github_organization}/software-templates.git
 cd software-templates
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/raf-backstage-demo/${github_organization}/g" {} +
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/control-cluster-raffa.demo.red-chesterfield.com/${base_domain}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/awesomeidp/${github_organization}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/cluster-vqg9l.vqg9l.sandbox1900.opentlc.com/${base_domain}/g" {} +
 git add -A
 git commit -m "initial customization"
 git push
 cd ..
 ```
 
-Fork the following repo `https://github.com/raf-backstage-demo/backstage-app-demo` to your organization.
+Fork the following repo `https://github.com/awesomeidp/backstage-app-demo` to your organization.
 Edit this code to add and remove backstage plugins. Also in order for the image to be available at least the packages produced by this repo must be publicly available.
 
 ```shell
 git clone git@github.com:${github_organization}/backstage-app-demo.git
 cd backstage-app-demo
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/raffaelespazzoli/${github_organization}/g" {} +
-find . -type f -not -path '*/\.git/*' -exec sed -i "s/raf-backstage-demo/${github_organization}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/awesomeidp/${github_organization}/g" {} +
+find . -type f -not -path '*/\.git/*' -exec sed -i "s/awesomeidp/${github_organization}/g" {} +
 git add -A
 git commit -m "initial customization"
 git push

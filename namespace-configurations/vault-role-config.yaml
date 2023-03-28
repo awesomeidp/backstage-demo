@@ -74,7 +74,7 @@ spec:
             path: kubernetes
             role: policy-admin
           path: quay
-          namespaceName: raf-backstage-demo
+          namespaceName: awesomeidp
           defaultPermission: read
       excludedPaths:
         - .metadata
@@ -133,7 +133,7 @@ spec:
             path: kubernetes
             role: policy-admin
           path: quay
-          namespaceName: raf-backstage-demo
+          namespaceName: awesomeidp
           namespaceType: organization
           defaultPermission: write
           createRepositories: true

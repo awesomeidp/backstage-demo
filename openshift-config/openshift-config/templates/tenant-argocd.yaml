@@ -151,7 +151,7 @@ spec:
           gitHub:
             gitServerCredentials:
               name: github-credentials
-          repositoryOwner: raf-backstage-demo
+          repositoryOwner: awesomeidp
           ownerType:  organization
           repositoryName: {{ "{{" }} .Labels.app {{ "}}" }}-gitops
           insecureSSL: true

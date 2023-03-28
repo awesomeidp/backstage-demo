@@ -47,7 +47,7 @@ spec:
     path: kubernetes
     role: policy-admin
   path: quay
-  namespaceName: raf-backstage-demo
+  namespaceName: awesomeidp
   defaultPermission: write
 --- 
 apiVersion: redhatcop.redhat.io/v1alpha1
