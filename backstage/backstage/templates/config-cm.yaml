@@ -158,23 +158,23 @@ data:
         - allow: [Component, System, API, Group, User, Resource, Location]
       locations:
         - type: url
-          target: https://github.com/${GITHUB_ORG}/software-templates/blob/main/scaffolder-templates/quarkus-template/template.yaml
+          target: https://github.com/awesomeidp/software-templates/blob/main/scaffolder-templates/quarkus-template/template.yaml
           rules:
             - allow: [Template]
         - type: url
-          target: https://github.com/${GITHUB_ORG}/software-templates/blob/main/scaffolder-templates/dotnet-template/template.yaml
+          target: https://github.com/awesomeidp/software-templates/blob/main/scaffolder-templates/dotnet-template/template.yaml
           rules:
             - allow: [Template]            
         - type: url
-          target: https://github.com/${GITHUB_ORG}/software-templates/blob/main/scaffolder-templates/app-template/template.yaml
+          target: https://github.com/awesomeidp/software-templates/blob/main/scaffolder-templates/app-template/template.yaml
           rules:
             - allow: [Template]
         - type: url
-          target: https://github.com/${GITHUB_ORG}/software-templates/blob/main/scaffolder-templates/cockroach-template/template.yaml
+          target: https://github.com/awesomeidp/software-templates/blob/main/scaffolder-templates/cockroach-template/template.yaml
           rules:
             - allow: [Template]      
         - type: url
-          target: https://github.com/${GITHUB_ORG}/software-templates/blob/main/scaffolder-templates/vm-template/template.yaml
+          target: https://github.com/awesomeidp/software-templates/blob/main/scaffolder-templates/vm-template/template.yaml
           rules:
             - allow: [Template]            
 
