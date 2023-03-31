@@ -42,7 +42,13 @@ spec:
           - secretRef:
               name: github-credentials
           - secretRef:
-              name: sonarqube-credentials                             
+              name: sonarqube-credentials
+          env:
+            - name: LOG_LEVEL
+              valueFrom:
+                configMapKeyRef:
+                  name: backstage-configuration
+                  key: LOG_LEVEL
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
