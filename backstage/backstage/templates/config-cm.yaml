@@ -5,6 +5,7 @@ metadata:
     {{- include "backstage.labels" . | nindent 4 }}
   name: {{ include "backstage.fullname" . }}-configuration
 data:
+  LOG_LEVEL: debug
   app-config.yaml: |
     app:
       title: Scaffolded Backstage App
