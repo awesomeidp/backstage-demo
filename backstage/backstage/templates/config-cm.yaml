@@ -55,7 +55,7 @@ data:
 
     github-org-provider:
       id: production
-      orgUrl: https://github.com/${GITHUB_ORG}        
+      orgUrl: https://github.com/idpdemodevelopers
 
     proxy:
       '/sonarqube':
